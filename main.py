@@ -19,11 +19,6 @@ def add_to_entry(symbol):
     entry.delete(0, tk.END)
     entry.insert(tk.END, current_text + str(symbol))
 
-def add_math_function(func):
-    current_text = entry.get()
-    entry.delete(0, tk.END)
-    entry.insert(tk.END, current_text + func + "(")
-
 root = tk.Tk()
 root.title("Kalkulator")
 
